@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({
         end_year: {
-            type:Date,
+            type:Number,
             default:"",
         },
         intensity: {
@@ -42,14 +42,8 @@ const productSchema = new mongoose.Schema({
             default:"",
         },
         published: {
-            month:{
-                type:String,
-                default:"",
-            },
-            date:{
-                type:Date,
-                default:Date.now(),
-            },
+            type:String,
+            default:""
         },
         // "published": "July, 04 2016 00:00:00",
         country: {
